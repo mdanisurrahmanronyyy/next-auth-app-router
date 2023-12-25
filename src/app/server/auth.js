@@ -3,6 +3,8 @@ import Credentials from 'next-auth/providers/credentials';
 import { userService } from './services/userService';
 
 export const authOptions = {
+  secret: process.env.NEXTAUTH_SECRET,
+  site: process.env.NEXTAUTH_URL,
   session: {
     strategy: 'jwt',
   },
