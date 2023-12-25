@@ -29,6 +29,7 @@ export const authOptions = {
         password: { label: 'Password', type: 'password' },
       },
       async authorize(credentials) {
+        console.log(credentials);
         const { username, password } = credentials;
 
         return userService.authenticate(username, password);
