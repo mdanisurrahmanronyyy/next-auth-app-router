@@ -1,5 +1,5 @@
 import { getServerSession } from 'next-auth';
-import Credentials from 'node_modules/next-auth/providers/credentials';
+import Credentials from 'next-auth/providers/credentials';
 import { userService } from './services/userService';
 
 export const authOptions = {
