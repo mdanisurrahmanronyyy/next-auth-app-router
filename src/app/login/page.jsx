@@ -13,6 +13,11 @@ const LoginPage = ({ searchParams }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    console.log({
+      username: inputs.username,
+      password: inputs.password,
+      callbackUrl: '/',
+    });
     await signIn('credentials', {
       username: inputs.username,
       password: inputs.password,
