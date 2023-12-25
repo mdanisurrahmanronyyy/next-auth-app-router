@@ -3,8 +3,6 @@ export const userService = {
   };
   
   function authenticate(username, password) {
-    console.log(username);
-    console.log(password);
     if (username !== 'admin' && password !== 'admin') {
       return null;
     }
